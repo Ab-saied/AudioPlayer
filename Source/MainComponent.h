@@ -32,8 +32,12 @@ private:
 
     // GUI Controls
     juce::TextButton loadButton{ "Load Files" };
-    juce::TextButton restartButton{ "Restart" };
-    juce::TextButton stopButton{ "Stop" };
+    juce::TextButton restartButton{ "Go to Start" };
+    juce::TextButton endButton{ "End" };
+    juce::TextButton stopButton{ "Pause" };
+    juce::TextButton resumeButton{ "Play" };
+    juce::TextButton muteToggleButton{ "Mute/Unmute" };
+    juce::TextButton loopButton{ "Loop" };
     juce::Slider volumeSlider;
 
     //void loadTrack(const juce::File& file);

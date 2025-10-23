@@ -31,7 +31,7 @@ private:
         {
             setUsingNativeTitleBar(true);
             setContentOwned(new MainComponent(), true); // MainComponent = our UI + logic
-            centreWithSize(400, 200);
+            centreWithSize(700, 300);
             setVisible(true);
         }
 
@@ -45,4 +45,14 @@ private:
 };
 
 // This macro starts the app
-START_JUCE_APPLICATION(SimpleAudioPlayer)
+
+class enhancedAudioPlayer : public SimpleAudioPlayer
+{ // Future enhancements will be be added here
+public:
+    const juce::String getApplicationName() override { return "Enhanced Audio Player"; }
+    const juce::String getApplicationVersion() override { return "1.1"; }
+
+
+};
+
+START_JUCE_APPLICATION(enhancedAudioPlayer);
